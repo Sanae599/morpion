@@ -20,4 +20,4 @@ def afficher_grille(grille: dict):
     for l in grille.values():
         print(' | '+' | '.join(l)+' | ')
         print(' ' + '-'*13)
-afficher_grille(lit_grille('grille.txt'))
+afficher_grille(lit_grille('grille.morpion'))
