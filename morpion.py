@@ -1,28 +1,11 @@
-grille ={'A':['','' ,''], 'B':['','' ,''], 'C':['','' ,'']}
 # Créer une grille vide avec lignes A, B, C et colonnes 1, 2, 3
 grille = {
     "A1": " ", "A2": " ", "A3": " ",
     "B1": " ", "B2": " ", "B3": " ",
     "C1": " ", "C2": " ", "C3": " "
 }
-def afficher_grille(grille):
-    print("   1   2   3")
-    print("A  " + grille["A1"] + " | " + grille["A2"] + " | " + grille["A3"])
-    print("  ---+---+---")
-    print("B  " + grille["B1"] + " | " + grille["B2"] + " | " + grille["B3"])
-    print("  ---+---+---")
-    print("C  " + grille["C1"] + " | " + grille["C2"] + " | " + grille["C3"])
-
-
 
 #verson réelle
-
-def afficher_plateau(plateau):
-    print()
-    for ligne in plateau:
-        print(" | ".join(ligne))
-        print("-" * 5)
-    print()
 
 def verifier_victoire(plateau, joueur):
     for ligne in plateau:
@@ -73,3 +56,5 @@ def morpion():
 
 if __name__ == "__main__":
     morpion()
+
+afficher_grille(grille)
