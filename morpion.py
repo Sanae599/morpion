@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 def lit_grille(fichier):
     grille = {'A': ['.', '.', '.'], 'B': ['.', '.', '.'], 'C': ['.', '.', '.']}
     with open(fichier, 'r') as f:
@@ -21,3 +22,12 @@ def afficher_grille(grille: dict):
         print(' | '+' | '.join(l)+' | ')
         print(' ' + '-'*13)
 afficher_grille(lit_grille('grille.morpion'))
+=======
+grille ={'A':['','' ,''], 'B':['','' ,''], 'C':['','' ,'']}
+
+def afficher_grille(grille: dict):
+    for ligne, valeur in grille.items():
+        print (f"{ligne} | {valeur}")
+
+afficher_grille(grille)
+>>>>>>> a58883a7620755511f001ddfec53d1477b98c5eb
